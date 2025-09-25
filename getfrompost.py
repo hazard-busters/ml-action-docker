@@ -3,7 +3,7 @@ import psycopg2
 
 # Connect to Postgres
 conn = psycopg2.connect(
-    host="localhost",
+    host="postgres",
     database="ab_db",
     user="ab",
     password="ab_post",
@@ -15,4 +15,4 @@ df = pd.read_sql("SELECT * FROM iris", conn)
 print("Retrieved Iris dataset from Postgres:")
 print(df.head())
 
-conn.close()
+conn.close() 
