@@ -21,7 +21,7 @@ jobs:
         ports:
           - 5432:5432 # maps the port 5432 of the container to the port 5432 of the host
         options: >-
-          --health-cmd="pg_isready -U user"
+          --health-cmd="pg_isready -U ab"
           --health-interval 10s 
           --health-timeout 5s 
           --health-retries 5

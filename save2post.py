@@ -8,7 +8,7 @@ df = iris.frame  # Pandas DataFrame
 
 # Connect to Postgres (service container)
 conn = psycopg2.connect(
-    host="localhost",
+    host="postgres",
     database="ab_db",
     user="ab",
     password="ab_post",
