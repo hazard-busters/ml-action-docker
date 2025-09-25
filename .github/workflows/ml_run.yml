@@ -1,4 +1,4 @@
-name: ML Run Original
+name: ML Run
 # on mentions a trigger for the workflow
 on: 
     push: # when a push is made to the main branch of the repository
