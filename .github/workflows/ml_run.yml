@@ -10,9 +10,14 @@ jobs:
     container:
       image: jupyter/scipy-notebook:latest # uses the scipy-notebook image from the jupyter repository
       options: --user root # runs the workflow as the root user
+      
     steps:
       - name: Checkout code
         uses: actions/checkout@v4 # uses the checkout action to checkout the code
+
+      - name: List installed Python packages
+        run: |
+          pip list
 
       - name: Run the script
         run: |
