@@ -26,4 +26,4 @@ jobs:
 
       - name: Run the script
         run: |
-          python ml_example.py
+          python ml_example_2.py
